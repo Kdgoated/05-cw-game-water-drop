@@ -8,18 +8,29 @@
 </head>
 <body>
     <div class="game-wrapper">
-        <h1 class="game-title">Water Drop</h1>
-        <p class="game-tagline">Catch the good drops, avoid the bad ones!</p>
+        <header class="hero-panel">
+            <div class="hero-branding">
+                <img src="img/cw_logo-horizontal.png" alt="charity: water logo" class="brand-logo">
+                <div>
+                    <h1 class="game-title">Water Drop Rescue</h1>
+                    <p class="game-tagline">Collect clean drops and cans while avoiding dirty water to bring hope to every tap.</p>
+                </div>
+            </div>
+            <div class="goal-badge">Goal: 20 points</div>
+        </header>
+
         <div class="score-panel">
-            <div class="score">Score: <span id="score">0</span></div>
-            <div class="timer">Time: <span id="time">30</span>s</div>
-            <button id="start-btn">Start Game</button>
+            <div class="score-item">Score: <span id="score">0</span></div>
+            <div class="score-item">Time: <span id="time">30</span>s</div>
+            <button id="start-btn">Start</button>
+            <button id="reset-btn" class="secondary-btn">Reset</button>
         </div>
-        
-        <div id="game-container">
-        </div>
+
+        <div id="game-message" class="game-message">Tap every clean drop before it reaches the ground.</div>
+
+        <div id="game-container" class="game-container"></div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
